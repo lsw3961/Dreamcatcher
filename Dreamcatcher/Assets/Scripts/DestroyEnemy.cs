@@ -10,7 +10,7 @@ public class DestroyEnemy : MonoBehaviour
     void Start()
     {
         GameObject temp = GameObject.FindGameObjectWithTag("Spawner");
-        Debug.Log(temp);
+        //Debug.Log(temp);
         spawner = temp.GetComponent<EnemySpawning>();
     }
     void OnMouseOver()

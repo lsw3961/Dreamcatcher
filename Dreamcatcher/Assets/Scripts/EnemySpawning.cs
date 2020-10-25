@@ -10,6 +10,7 @@ public class EnemySpawning : MonoBehaviour
     float width;
     public List<GameObject> enemies;
     public List<GameObject> prefabs;
+    public ScoreKeeping scoreKeeper;
     Vector3 position;
     public int numberOfGhosts;
     void Start()
@@ -48,6 +49,7 @@ public class EnemySpawning : MonoBehaviour
     public void CreateNew(GameObject removed)
     {
         enemies.Remove(removed);
+        scoreKeeper.updateScore();
         int positionDecider = Random.Range(1, 4);
         switch (positionDecider)
         {

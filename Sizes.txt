@@ -1,0 +1,6 @@
+Scale is in Pixels
+
+
+Ghosts:256x256
+Bedroom:2000x1000
+Dreamcatcher:128x128

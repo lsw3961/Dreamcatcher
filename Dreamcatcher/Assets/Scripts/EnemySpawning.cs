@@ -16,7 +16,7 @@ public class EnemySpawning : MonoBehaviour
     {
         height = 2f * cam.orthographicSize;
         width = height * cam.aspect;
-        for (int i = 0; i < enemies.Count; i++)
+        for (int i = 0; i < numberOfGhosts; i++)
         {
             int positionDecider = Random.Range(1, 4);
             switch (positionDecider)
@@ -45,37 +45,32 @@ public class EnemySpawning : MonoBehaviour
         }
         //Debug.Log(enemies.Count);
     }
-
-    // Update is called once per frame
-    void FixedUpdate()
+    public void CreateNew(GameObject removed)
     {
-        Debug.Log(enemies.Count);
-        if (enemies.Count < numberOfGhosts)
+        enemies.Remove(removed);
+        int positionDecider = Random.Range(1, 4);
+        switch (positionDecider)
         {
-            int positionDecider = Random.Range(1, 4);
-            switch (positionDecider)
-            {
-                //top
-                case (1):
-                    position = new Vector3(Random.Range(-10f, 10f), Random.Range(5.5f, 5f));
-                    break;
-                //right
-                case (2):
-                    position = new Vector3(Random.Range(10f, 10.5f), Random.Range(5f, 5.5f));
-                    break;
-                //bottom
-                case (3):
-                    position = new Vector3(Random.Range(-10f, 10f), Random.Range(-5.5f, -5f));
+            //top
+            case (1):
+                position = new Vector3(Random.Range(-10f, 10f), Random.Range(5.5f, 5f));
+                break;
+            //right
+            case (2):
+                position = new Vector3(Random.Range(10f, 10.5f), Random.Range(5f, 5.5f));
+                break;
+            //bottom
+            case (3):
+                position = new Vector3(Random.Range(-10f, 10f), Random.Range(-5.5f, -5f));
 
-                    break;
-                //left
-                case (4):
-                    position = new Vector3(Random.Range(10f, 10.5f), Random.Range(-5.5f, -5f));
+                break;
+            //left
+            case (4):
+                position = new Vector3(Random.Range(10f, 10.5f), Random.Range(-5.5f, -5f));
 
-                    break;
-            }
-            enemies.Add(Instantiate(prefabs[Random.Range(0, prefabs.Count)], position, Quaternion.identity));
+                break;
         }
+        enemies.Add(Instantiate(prefabs[Random.Range(0, prefabs.Count)], position, Quaternion.identity));
     }
 
 }

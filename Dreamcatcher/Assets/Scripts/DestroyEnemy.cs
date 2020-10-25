@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class DestroyEnemy : MonoBehaviour
 {
-
+    EnemySpawning spawner;
     public float lifeTime;
 
     void Start()
     {
-        lifeTime = 2f;
+        GameObject temp = GameObject.FindGameObjectWithTag("Spawner");
+        Debug.Log(temp);
+        spawner = temp.GetComponent<EnemySpawning>();
     }
     void OnMouseOver()
     {
@@ -17,6 +19,7 @@ public class DestroyEnemy : MonoBehaviour
 
         if (lifeTime < 0)
         {
+            spawner.CreateNew(gameObject);
             Destroy(gameObject);
         }
     }

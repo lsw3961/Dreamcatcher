@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -227,10 +227,10 @@ RectTransform:
   m_Father: {fileID: 1099145124}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.19250001, y: 0.22700001}
-  m_AnchorMax: {x: 0.79875004, y: 0.36153728}
-  m_AnchoredPosition: {x: 3.4999847, y: 1.3300018}
-  m_SizeDelta: {x: -0.4033203, y: 1.0555649}
+  m_AnchorMin: {x: 0.19375001, y: 0.17169154}
+  m_AnchorMax: {x: 0.79875004, y: 0.30261695}
+  m_AnchoredPosition: {x: -0.7016144, y: 0.43701172}
+  m_SizeDelta: {x: 0.5966797, y: 3.0555649}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &556089028
 MonoBehaviour:
@@ -367,6 +367,7 @@ RectTransform:
   - {fileID: 2135460490}
   - {fileID: 556089027}
   - {fileID: 1264249906}
+  - {fileID: 1676502146}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -405,7 +406,7 @@ PrefabInstance:
     - target: {fileID: 7027730155089095544, guid: 0c217423b94df4247be7c7ed452d5623,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7027730155089095545, guid: 0c217423b94df4247be7c7ed452d5623,
         type: 3}
@@ -503,10 +504,10 @@ RectTransform:
   m_Father: {fileID: 1099145124}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.34, y: -197.78}
-  m_SizeDelta: {x: 182.68863, y: 37.565872}
+  m_AnchorMin: {x: 0.40375, y: 0.06261695}
+  m_AnchorMax: {x: 0.63000005, y: 0.13100001}
+  m_AnchoredPosition: {x: 0.8442764, y: 4.5}
+  m_SizeDelta: {x: 1.6886292, y: 0.5658722}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1264249907
 MonoBehaviour:
@@ -726,6 +727,91 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdc56d889e51b8145abae4105bd42bfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1676502145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1676502146}
+  - component: {fileID: 1676502148}
+  - component: {fileID: 1676502147}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1676502146
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676502145}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1099145124}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.58750004, y: 0.3283085}
+  m_AnchorMax: {x: 0.96625006, y: 0.90366584}
+  m_AnchoredPosition: {x: 1.5, y: -0.59400177}
+  m_SizeDelta: {x: 6.122467, y: 3.0639648}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1676502147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676502145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: bf89b5cd6dc9633459ee5e942f17174f, type: 3}
+    m_FontSize: 23
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.49
+  m_Text: '-Mouse to move
+
+    -Hover to Kill
+
+    -Last until the morning
+
+    -Use
+    Space Bar when you have 200 points to unleash your power.'
+--- !u!222 &1676502148
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676502145}
+  m_CullTransparentMesh: 0
 --- !u!1 &1976668451
 GameObject:
   m_ObjectHideFlags: 0

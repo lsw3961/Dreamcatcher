@@ -6,12 +6,24 @@ public class DestroyEnemy : MonoBehaviour
 {
     EnemySpawning spawner;
     public float lifeTime;
+    public int soundNum = 0;
+
+    [SerializeField]
+    GameObject death1;
+
+    [SerializeField]
+    GameObject death2;
+
+    [SerializeField]
+    GameObject death3;
 
     void Start()
     {
         GameObject temp = GameObject.FindGameObjectWithTag("Spawner");
         //Debug.Log(temp);
         spawner = temp.GetComponent<EnemySpawning>();
+
+        soundNum = Random.Range(0, 6);
     }
     void OnMouseOver()
     {
@@ -20,7 +32,23 @@ public class DestroyEnemy : MonoBehaviour
         if (lifeTime < 0)
         {
             spawner.CreateNew(gameObject);
+
+            
+
             Destroy(gameObject);
+
+            if (soundNum == 1)
+            {
+                death1.GetComponent<AudioSource>().PlayOneShot(death1.GetComponent<AudioSource>().clip, .5f);
+            }
+            else if (soundNum == 2)
+            {
+                death2.GetComponent<AudioSource>().PlayOneShot(death2.GetComponent<AudioSource>().clip, .5f);
+            }
+            else
+            {
+                death3.GetComponent<AudioSource>().PlayOneShot(death3.GetComponent<AudioSource>().clip, .5f);
+            }
         }
     }
 }

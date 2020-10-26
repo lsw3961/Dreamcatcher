@@ -136,3 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 0.2
+  soundNum: 0
+  death1: {fileID: 7445298763143873768, guid: b4e95f5a44db1d84e8f29d84295040c3, type: 3}
+  death2: {fileID: 6879891911140376737, guid: 95a98dafc968fa64fab85b667e0c24a9, type: 3}
+  death3: {fileID: 3174580269283531886, guid: 3a5954760023972418f019b5aebb20fd, type: 3}

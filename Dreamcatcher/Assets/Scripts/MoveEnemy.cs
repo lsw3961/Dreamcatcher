@@ -15,7 +15,6 @@ public class MoveEnemy : MonoBehaviour
     {
         target = new Vector3(0, 0, 0);
         position = gameObject.transform.position;
-        speed = 1.0f;
     }
     /// <summary>
     /// update function

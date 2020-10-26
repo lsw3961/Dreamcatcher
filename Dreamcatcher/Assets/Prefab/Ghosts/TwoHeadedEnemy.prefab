@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ba70c7157a9824d8c0c82510a6cbbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 0.2
+  lifeTime: 0.1
   soundNum: 0
   death1: {fileID: 7445298763143873768, guid: b4e95f5a44db1d84e8f29d84295040c3, type: 3}
   death2: {fileID: 6879891911140376737, guid: 95a98dafc968fa64fab85b667e0c24a9, type: 3}

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -229,7 +229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19375001, y: 0.17169154}
   m_AnchorMax: {x: 0.79875004, y: 0.30261695}
-  m_AnchoredPosition: {x: -0.7016144, y: 0.43701172}
+  m_AnchoredPosition: {x: -0.7015991, y: 0.43701172}
   m_SizeDelta: {x: 0.5966797, y: 3.0555649}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &556089028
@@ -253,12 +253,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bf89b5cd6dc9633459ee5e942f17174f, type: 3}
-    m_FontSize: 31
+    m_FontSize: 25
     m_FontStyle: 3
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -406,7 +406,7 @@ PrefabInstance:
     - target: {fileID: 7027730155089095544, guid: 0c217423b94df4247be7c7ed452d5623,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7027730155089095545, guid: 0c217423b94df4247be7c7ed452d5623,
         type: 3}
@@ -785,10 +785,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bf89b5cd6dc9633459ee5e942f17174f, type: 3}
-    m_FontSize: 23
+    m_FontSize: 15
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -846,8 +846,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000076293945, y: 1.6800003}
-  m_SizeDelta: {x: 0.00015258789, y: -3.3629265}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0}
+  m_SizeDelta: {x: 36.884277, y: 14.674484}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1976668453
 MonoBehaviour:
@@ -990,8 +990,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0242796, y: 0.36153728}
   m_AnchorMax: {x: 0.58750004, y: 0.90366584}
-  m_AnchoredPosition: {x: -0.8999939, y: 1.699997}
-  m_SizeDelta: {x: -1.3279114, y: -0.922699}
+  m_AnchoredPosition: {x: -0.901062, y: 0.64009094}
+  m_SizeDelta: {x: -1.320282, y: 1.2801666}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2135460491
 MonoBehaviour:
@@ -1014,7 +1014,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bf89b5cd6dc9633459ee5e942f17174f, type: 3}
-    m_FontSize: 20
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2

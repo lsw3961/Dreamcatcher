@@ -5,9 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class ScoreKeeping : MonoBehaviour
 {
-    public Text score;
     public int scoreValue;
-    static int currentScore;
+    public static int currentScore;
+    public int ScoreforPower;
     int sceneNum;
 
 
@@ -18,20 +18,19 @@ public class ScoreKeeping : MonoBehaviour
         {
             currentScore = 0;
         }
-        else
-            printScore();
     }
     public void updateScore()
     {
         Debug.Log(currentScore);
         currentScore += scoreValue;
-        score.text = "Score: " + currentScore;
+        ScoreforPower = currentScore;
     }
-    public void printScore()
+
+    public void ResetScore()
     {
-        score.text = "Score: " + currentScore;
+        currentScore = 0;
+        ScoreforPower = 0;
     }
-    
 
 
 

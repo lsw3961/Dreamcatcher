@@ -244,8 +244,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0.4853772
-  m_PointLightOuterRadius: 2.7876804
+  m_PointLightInnerRadius: 8.65566
+  m_PointLightOuterRadius: 8.710821
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -265,8 +265,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271741949}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11, y: -0.2, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.06445762, w: 0.99792045}
+  m_LocalPosition: {x: -0.11, y: -0.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -364,6 +364,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c217423b94df4247be7c7ed452d5623, type: 3}
+--- !u!1 &395880080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 395880082}
+  - component: {fileID: 395880081}
+  m_Layer: 0
+  m_Name: MusicInitializer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &395880081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395880080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52fa41cf9a577f4bae108987b8c20e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicGame: {fileID: 5815009724397093073, guid: f917db8f5d8427b4a8f7ebb425b03d28,
+    type: 3}
+--- !u!4 &395880082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395880080}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 400, y: 211, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &515687106
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +442,9 @@ MonoBehaviour:
   cam: {fileID: 519420031}
   enemies: []
   prefabs:
-  - {fileID: 6793561232408869577, guid: f2445a845d6f1d1489e755f4c19a0da7, type: 3}
+  - {fileID: 268352901118905094, guid: 4b206f6552119e64285d8fec4dff04b1, type: 3}
+  - {fileID: 268352901118905094, guid: 6d5c8930a07f7eb41a24f03ed7b5f740, type: 3}
+  - {fileID: 268352901118905094, guid: 22022715633856a4d98db1431419f1ec, type: 3}
   scoreKeeper: {fileID: 515687109}
   numberOfGhosts: 10
 --- !u!4 &515687108
@@ -1026,7 +1073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeScenes: {fileID: 2248797784727498559}
-  timeUntilDawn: 2
+  timeUntilDawn: 270
   timeRemaining: 0
   runTimer: 1
   timerDisplay: {fileID: 1924035651}

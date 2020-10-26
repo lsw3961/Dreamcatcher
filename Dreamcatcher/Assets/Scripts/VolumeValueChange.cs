@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class VolumeValueChange : MonoBehaviour
 {
@@ -11,12 +12,14 @@ public class VolumeValueChange : MonoBehaviour
     void Start()
     {
         audioSrc = GetComponent<AudioSource>();
+        Debug.Log(audioSrc);
     }
 
     // Update is called once per frame
     void Update()
     {
         audioSrc.volume = musicVolume;
+        Debug.Log(audioSrc.volume);
     }
 
     public void SetVolume(float vol)

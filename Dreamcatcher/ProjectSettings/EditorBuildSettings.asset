@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: 32b20e5c6724824438e41028e886cad1
   - enabled: 1
+    path: Assets/Scenes/HowToPlayScene.unity
+    guid: c9ee46a00ff74634a9e138772f33e5ab
+  - enabled: 1
     path: Assets/Scenes/InGameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -17,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinningNextDayScreen.unity
     guid: 30bf4958ecfae5146a7f083ae56949f6
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 33958f33e080d5c4984651469b02644c
   m_configObjects: {}

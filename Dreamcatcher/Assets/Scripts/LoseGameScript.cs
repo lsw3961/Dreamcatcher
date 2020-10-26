@@ -5,10 +5,9 @@ using UnityEngine;
 public class LoseGameScript : MonoBehaviour
 {
     public int health;
-    public ChangeScene changeSceneScript;
     EnemySpawning spawner;
-    public int sceneChange;
-
+    public SceneTransitionLoading sceneManager;
+    public int SceneIndex;
     public void Start()
     {
         GameObject temp = GameObject.FindGameObjectWithTag("Spawner");
@@ -23,7 +22,7 @@ public class LoseGameScript : MonoBehaviour
         health--;
         if (health <= 0)
         {
-            changeSceneScript.MoveScenes(sceneChange);
+            sceneManager.LoadNextLevel(SceneIndex);
         }
     }
 }

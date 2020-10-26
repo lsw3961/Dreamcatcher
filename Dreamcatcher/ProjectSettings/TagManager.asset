@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Spawner
   - Score
+  - music
   layers:
   - Default
   - TransparentFX

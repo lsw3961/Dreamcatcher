@@ -1,19 +1,22 @@
-<<<<<<< HEAD
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class CountdownTimerScript : MonoBehaviour
 {
+    public SceneTransitionLoading changeScenes;
+    public static int dayNumber = 1;
     public float timeUntilDawn = 270;
     public float timeRemaining;
     public bool runTimer;
     public DisplayTImer timerDisplay;
+    public Text dayText;
     // Update is called once per frame
     public void Start()
     {
         runTimer = true;
         timeRemaining = 0;
+        dayText.text = ("DAY: " + dayNumber);
     }
 
 
@@ -27,49 +30,22 @@ public class CountdownTimerScript : MonoBehaviour
             }
             else
             {
-                Debug.Log("YOU SURVIVED THE NIGHT");
+                dayText.text = ("YOU SURVIVED THE NIGHT!");
                 runTimer = false;
                 timeRemaining = 0;
+                dayNumber++;
+                Debug.Log(dayNumber);
+                if (dayNumber != 8)
+                {
+                    changeScenes.LoadNextLevel(4);
+                }
+                else
+                {
+                    changeScenes.LoadNextLevel(6);
+                }
+
             }
         }
         timerDisplay.DisplayTime(timeRemaining);
     }
 }
-=======
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class CountdownTimerScript : MonoBehaviour
-{
-    public float timeUntilDawn = 270;
-    public float timeRemaining;
-    public bool runTimer;
-    public DisplayTImer timerDisplay;
-    // Update is called once per frame
-    public void Start()
-    {
-        runTimer = true;
-        timeRemaining = 0;
-    }
-
-
-    void Update()
-    {
-        if (runTimer)
-        {
-            if (timeRemaining < timeUntilDawn)
-            {
-                timeRemaining += Time.deltaTime;
-            }
-            else
-            {
-                Debug.Log("YOU SURVIVED THE NIGHT");
-                runTimer = false;
-                timeRemaining = 0;
-            }
-        }
-        timerDisplay.DisplayTime(timeRemaining);
-    }
-}
->>>>>>> 9eded08283690c77846f031d49ae377ccae83217

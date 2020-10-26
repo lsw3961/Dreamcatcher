@@ -2,28 +2,41 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class VolumeValueChange : MonoBehaviour
 {
-    private AudioSource audioSrc;
 
-    private float musicVolume = 1f;
+    public AudioSource aS;
     // Start is called before the first frame update
     void Start()
     {
-        audioSrc = GetComponent<AudioSource>();
-        Debug.Log(audioSrc);
+        aS.volume = 1f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        audioSrc.volume = musicVolume;
-        Debug.Log(audioSrc.volume);
+
     }
 
-    public void SetVolume(float vol)
+    public void SetVolumeNone()
     {
-        musicVolume = vol;
+        aS.volume = 0f;
+    }
+
+    public void SetVolumeQuiet()
+    {
+        aS.volume = .35f;
+    }
+
+    public void SetVolumeNormal()
+    {
+        aS.volume = .75f;
+    }
+
+    public void SetVolumeLoud()
+    {
+        aS.volume = 1f;
     }
 }

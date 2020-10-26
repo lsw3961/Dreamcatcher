@@ -17,12 +17,14 @@ public class DestroyEnemy : MonoBehaviour
     [SerializeField]
     GameObject death3;
 
+
+    private Shake shake;
     void Start()
     {
         GameObject temp = GameObject.FindGameObjectWithTag("Spawner");
         //Debug.Log(temp);
         spawner = temp.GetComponent<EnemySpawning>();
-
+        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Shake>();
         soundNum = Random.Range(0, 6);
     }
     void OnMouseOver()
@@ -31,6 +33,7 @@ public class DestroyEnemy : MonoBehaviour
 
         if (lifeTime < 0)
         {
+            shake.camshake();
             spawner.CreateNew(gameObject);
 
             

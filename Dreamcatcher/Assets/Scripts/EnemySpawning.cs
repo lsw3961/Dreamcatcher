@@ -11,13 +11,14 @@ public class EnemySpawning : MonoBehaviour
     public List<GameObject> enemies;
     public List<GameObject> prefabs;
     public ScoreKeeping scoreKeeper;
+    public DiffcultyMeter meter;
     Vector3 position;
     public int numberOfGhosts;
     void Start()
     {
         height = 2f * cam.orthographicSize;
         width = height * cam.aspect;
-        for (int i = 0; i < numberOfGhosts; i++)
+        for (int i = 0; i < meter.DifficutlyPerDay(); i++)
         {
             int positionDecider = Random.Range(1, 8);
             switch (positionDecider)

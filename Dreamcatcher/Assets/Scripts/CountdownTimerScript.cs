@@ -11,6 +11,11 @@ public class CountdownTimerScript : MonoBehaviour
     public bool runTimer;
     public DisplayTImer timerDisplay;
     public Text dayText;
+
+    public int DayNumber
+    {
+        get { return dayNumber; }
+    }
     // Update is called once per frame
     public void Start()
     {

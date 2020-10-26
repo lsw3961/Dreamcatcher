@@ -8,6 +8,7 @@ TagManager:
   - Score
   - music
   - GameMusic
+  - ScreenShake
   layers:
   - Default
   - TransparentFX

@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class LoseGameScript : MonoBehaviour
 {
     public int health;
     EnemySpawning spawner;
     public SceneTransitionLoading sceneManager;
     public int SceneIndex;
+    public Text healthText;
     public void Start()
     {
         GameObject temp = GameObject.FindGameObjectWithTag("Spawner");
@@ -24,5 +25,9 @@ public class LoseGameScript : MonoBehaviour
         {
             sceneManager.LoadNextLevel(SceneIndex);
         }
+    }
+    public void Update()
+    {
+        healthText.text = health.ToString();
     }
 }

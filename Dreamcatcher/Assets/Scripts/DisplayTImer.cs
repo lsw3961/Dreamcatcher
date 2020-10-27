@@ -16,7 +16,7 @@ public class DisplayTImer : MonoBehaviour
     {
         ampm = "pm";
         hours = 8;
-        moduloTime = 5;
+        moduloTime = 1.5f;
     }
 
     void Update()
@@ -26,22 +26,22 @@ public class DisplayTImer : MonoBehaviour
 
     public void DisplayTime(float timeToDisplay)
     {
-        minutes = Mathf.Floor(Mathf.Repeat(timeToDisplay / 5, 6));
+        minutes = Mathf.Floor(Mathf.Repeat(timeToDisplay / 1.5f, 6));
 
         moduloTime -= Time.deltaTime;
 
-        if (Mathf.FloorToInt(timeToDisplay % 30) < 1 && moduloTime < 0)
+        if (Mathf.FloorToInt(timeToDisplay % 9) < 1 && moduloTime < 0)
         {
             hours++;
-            moduloTime = 5;
-        }
-        if (hours == 12)
-        {
-            ampm = "am";
+            moduloTime = 1.5f;
         }
         if (hours > 12)
         {
             hours = 1;
+        }
+        if (hours == 12 || hours < 8)
+        {
+            ampm = "am";
         }
         else
         {

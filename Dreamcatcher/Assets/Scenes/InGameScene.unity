@@ -713,7 +713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   day: 0
   timer: {fileID: 1924035652}
-  enemyNumberPerDay: 05000000060000000700000008000000090000000a0000000d000000
+  enemyNumberPerDay: 0300000004000000050000000600000007000000080000000c000000
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,7 +1684,7 @@ GameObject:
   - component: {fileID: 1911212457}
   - component: {fileID: 1911212458}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ShakeController
   m_TagString: ScreenShake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1762,7 +1762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeScenes: {fileID: 2248797784727498559}
-  timeUntilDawn: 270
+  timeUntilDawn: 81
   timeRemaining: 0
   runTimer: 1
   timerDisplay: {fileID: 1924035651}

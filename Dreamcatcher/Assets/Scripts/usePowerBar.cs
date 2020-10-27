@@ -17,6 +17,7 @@ public class usePowerBar : MonoBehaviour
     {
         PowerBar.SetActive(false);
         flashOfLight.SetActive(false);
+        timer = timerConstant;
     }
     void Update()
     {

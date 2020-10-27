@@ -264,7 +264,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WE ARE THE DREAMCATCHERS
+  m_Text: THE DREAMCATCHERS
 --- !u!222 &556089029
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -761,7 +761,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.58750004, y: 0.3283085}
   m_AnchorMax: {x: 0.96625006, y: 0.90366584}
-  m_AnchoredPosition: {x: 1.5, y: -0.59400177}
+  m_AnchoredPosition: {x: 1.5000916, y: -0.25186157}
   m_SizeDelta: {x: 6.122467, y: 3.0639648}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1676502147
@@ -786,7 +786,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: bf89b5cd6dc9633459ee5e942f17174f, type: 3}
     m_FontSize: 15
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
@@ -1025,11 +1025,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Welcome to the fight, brother, you are Elijah's Dreamcatcher. The God Hagones
-    has created spirits in the form of nightmares to terrorize this poor boy. Its
-    up to you to defend him from this evil threat. You have joined an elite order
-    of fighters against darkness. Rise to the challenge and defeat this threat, for
-    the good of the defenseless we stave off the darkness until daybreak.
+  m_Text: "Welcome to the fight, brother, you are Elijah's Dreamcatcher. The God
+    Hagones has created spirits in the form of nightmares to terrorize this poor
+    boy. Its up to you to defend him from this evil threat. You have joined an elite
+    order of fighters against darkness. Rise to the challenge and defeat this threat,
+    for the good of the defenseless we stave off the darkness until daybreak. \nWe
+    are,"
 --- !u!222 &2135460492
 CanvasRenderer:
   m_ObjectHideFlags: 0
